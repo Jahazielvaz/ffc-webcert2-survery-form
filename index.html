@@ -11,10 +11,37 @@
         <h1 id="title">Survey Form</h1>
         <p id='description'>This is a simple survey, meant to figure out who would win in an investigation between L and Sherlock</p>
       </div>
-      <input  id="number" placeholder="Enter User Id" required="id">
-      <input type="text" id="name" placeholder="Name" ><br>
-      <input type="email" id="email" placeholder="email" size="50" maxlength="20" required>
-      <input type="submit">
+      <input type="number" id="number" min="1" max="10" placeholder="Type a number 1 - 10" required><br><br>
+      <input type="text" id="name-label" placeholder="Name"  required><br><br>
+      <input type="email" id="email-label"  size="50" maxlength="20" placeholder="Email" required><br><br><br>
+
+      <select id="dropdown">
+        <h2>Select Detective</h2>
+        <option value="select">Select One</option>
+        <option name="character" value="l">L</option>
+        <option name="character" value="sherlock">Sherlock</option>
+      </select>
+
+
+      <section>
+        <h2>Top Skill</h2>
+        <label><input checked="checked" type="radio" name="skill"> Select One</label><hr>
+        <label><input type="radio" name="skill"> Deduction through environment</label><br>
+        <label><input type="radio" name="skill"> Deduction through behavior</label><br>
+      </section>
+
+      <section>
+        <h2>Favorite Attributes</h2>
+        <label><input type="checkbox" value="trickery" name="attributes">Trickery</label>
+        <label><input type="checkbox" value="confrontation" name="attributes">Confrontation</label>
+        <label><input type="checkbox" value="gambling" name="attributes">Gambling  </label><br>
+        <label><input type="checkbox" value="observation" name="attributes">Observation</label>
+        <label><input type="checkbox" value="delegation" name="attributes">Delegation</label>
+        <label><input type="checkbox" value="intel" name="attributes">Intel</label>
+      </section>
+      <br><br>
+      <textarea name="textarea" placeholder="Additional Comments"></textarea>
+      <input id="submit" type="submit" value="Submit Results">
     </form>
 
   </body>
