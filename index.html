@@ -11,9 +11,9 @@
         <h1 id="title">Survey Form</h1>
         <p id='description'>This is a simple survey, meant to figure out who would win in an investigation between L and Sherlock</p>
       </div>
-      <input type="number" id="number" min="1" max="10" placeholder="Type a number 1 - 10" required><br><br>
-      <input type="text" id="name-label" placeholder="Name"  required><br><br>
-      <input type="email" id="email-label"  size="50" maxlength="20" placeholder="Email" required><br><br><br>
+      <label id="number-label">Group Number<input type="number" id="number" min="1" max="10" placeholder="1 through 10" required></label><br><br>
+      <label id="name-label">Name<input type="text" id="name" placeholder="Example: John Doe"  required></label><br><br>
+      <label id="email-label">Email<input type="email" id="email" size="50" maxlength="20" placeholder="Example: john.doe@mail.com" required></label><br><br><br>
 
       <select id="dropdown">
         <h2>Select Detective</h2>
@@ -25,9 +25,9 @@
 
       <section>
         <h2>Top Skill</h2>
-        <label><input checked="checked" type="radio" name="skill"> Select One</label><hr>
-        <label><input type="radio" name="skill"> Deduction through environment</label><br>
-        <label><input type="radio" name="skill"> Deduction through behavior</label><br>
+        <label><input checked="checked" type="radio" name="skill" value="Select One"> Select One</label><hr>
+        <label><input type="radio" name="skill" value="Deduction through environment"> Deduction through environment</label><br>
+        <label><input type="radio" name="skill" value="Deduction through behavior"> Deduction through behavior</label><br>
       </section>
 
       <section>
